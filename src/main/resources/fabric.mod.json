@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mining_tracker",
+  "version": "${version}",
+
+  "name": "Mining Tracker",
+  "description": "This mod tells you about mining info.",
+  "authors": [
+    "Mauchin"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/mining_tracker/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.mauchin.mining_tracker.MiningTracker"
+    ],
+    "modmenu": [
+      "net.mauchin.mining_tracker.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "minecraft": "1.18.x",
+    "fabric-key-binding-api-v1": "*",
+    "java": ">=17",
+    "fabric": "*"
+  }
+}
